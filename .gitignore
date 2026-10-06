@@ -1,0 +1,51 @@
+# ============================================================
+# Northsmith — repo ignore rules
+# ============================================================
+
+# WordPress config (contains DB creds + salts)
+wp-config.php
+wp-config.php.bak
+
+# Cloudflare tunnel binaries
+cloudflared
+cloudflared.deb
+cloudflared.rpm
+
+# opencode tool scratch
+.kilo/
+.opencode/
+
+# Database dumps
+database/*.sql
+*.sql
+!wp-content/plugins/**/*.sql
+
+# Environment files
+.env
+.env.*
+
+# Backups
+*.bak
+*-backup-*
+db-backup-*
+
+# Logs
+*.log
+wp-content/debug.log
+wp-content/uploads/wc-logs/
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# Cache / runtime
+wp-content/cache/
+wp-content/upgrade/
+wp-content/backup-db/
+wp-content/backups/
+wp-content/wflogs/
+wp-content/uploads/woocommerce_transient_files/
+wp-content/uploads/woocommerce_uploads/
